@@ -10,5 +10,4 @@ package-lock.json (опционально)
 .idea/
 .vscode/
 *.swp
-app/
-./public/
+./app/
