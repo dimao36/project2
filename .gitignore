@@ -4,10 +4,10 @@ npm-debug.log
 yarn-error.log
 yarn-debug.log
 package-lock.json (опционально)
-/app
 
 # OS specific
 .DS_Store
 .idea/
 .vscode/
 *.swp
+/app
