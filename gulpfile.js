@@ -27,3 +27,8 @@ exports.cloneFiles = async () => {
     return gulp.src('app/*.html') //копіювання всіх html файлів з папки app
     .pipe(gulp.dest('public')); //виведення в public
 }
+
+exports.cloneCSS = async () => {
+    return gulp.src('app/*main.css') //копіювання всіх html файлів з папки app
+    .pipe(gulp.dest('public')); //виведення в public
+}
