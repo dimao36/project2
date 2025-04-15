@@ -34,7 +34,7 @@ exports.cloneCSS = async () => {
 }
 
 exports.cloneFiles = async () => {
-    return gulp.src('app/**/*.js') //копіювання всіх css файлів з папки app
+    return gulp.src('app/**/*.js') 
     .pipe(gulp.dest('public')); //виведення в public
 }
 
@@ -52,3 +52,8 @@ exports.minifyJS = async () => {
 }
 const cleanCSS = require('gulp-clean-css'); //підключаємо clean-css
 const uglify = require('gulp-uglify'); //підключаємо uglify
+
+//exports.cloneFiles = async () => {
+///    return gulp.src('app/*.html') //копіювання всіх html файлів з папки app
+///    .pipe(gulp.dest('public')); //виведення в public
+///}
