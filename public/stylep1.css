@@ -1,5 +1,4 @@
 body {
-    background-color: #000;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -13,6 +12,7 @@ p {
     display: inline-block;
     font-size: 36px;
     color: #FFFFFF;
+    background: #333333;
     text-shadow: 
     #FFF 0px 0px 5px,
     #FFF 0px 0px 10px,
