@@ -1,12 +1,17 @@
 p {
-    font-family: "Courier New", Courier, monospace;
-    font-size: 24px;
-    letter-spacing: 6px;
-    word-spacing: 6px;
-    color: #000000;
-    font-weight: 700;
-    text-decoration: none;
-    font-style: normal;
-    font-variant: normal;
-    text-transform: none;
+    p {
+        border: 5px ridge #7F30A4;
+        border-radius: 40px;
+        color: #FFFFFF;
+        background: #333333;
+        text-shadow: 
+        #FFF 0px 0px 5px,
+        #FFF 0px 0px 10px,
+        #FFF 0px 0px 15px,
+        #FF2D95 0px 0px 20px,
+        #FF2D95 0px 0px 30px,
+        #FF2D95 0px 0px 40px,
+        #FF2D95 0px 0px 50px,
+        #FF2D95 0px 0px 75px;
+    }
     }
