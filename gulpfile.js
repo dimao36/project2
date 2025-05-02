@@ -33,7 +33,7 @@ exports.cloneCSS = async () => {
     .pipe(gulp.dest('public')); //виведення в public
 }
 
-exports.cloneFiles = async () => {
+exports.cloneJS = async () => {
     return gulp.src('app/**/*.js') 
     .pipe(gulp.dest('public')); //виведення в public
 }
