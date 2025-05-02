@@ -1,6 +1,6 @@
 p {
-    border: 5px ridge #7F30A4;
-    border-radius: 40px;
+    display: inline-block;
+    font-size: 36px;
     color: #FFFFFF;
     background: #333333;
     text-shadow: 
@@ -12,4 +12,9 @@ p {
     #FF2D95 0px 0px 40px,
     #FF2D95 0px 0px 50px,
     #FF2D95 0px 0px 75px;
+    border: 5px ridge #7F30A4;
+    border-radius: 40px;
+    padding: 20px 40px;
+    margin: 100px auto;
+    text-align: center;
 }
