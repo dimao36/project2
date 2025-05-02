@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    }
+
+    p {
+    font-size: 36px;
+    color: #FFFFFF;
+    background: #333333;
+    text-shadow:
+        #FFF 0px 0px 5px,
+        #FFF 0px 0px 10px,
+        #FFF 0px 0px 15px,
+        #FF2D95 0px 0px 20px,
+        #FF2D95 0px 0px 30px,
+        #FF2D95 0px 0px 40px,
+        #FF2D95 0px 0px 50px,
+        #FF2D95 0px 0px 75px;
+    border: 5px ridge #7F30A4;
+    border-radius: 40px;
+    padding: 20px 40px;
+    margin: 0;
+    }
+
+    .profile-image img {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }

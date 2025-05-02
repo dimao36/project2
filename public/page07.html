@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Мерехтіння</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="stylep2.css">
+
+</head>
+<body>
+
+<div class="center-wrapper">
+    <p id="myText">Мерехтливий текст</p>
+    <div class="profile-image">
+    <img id="myImage" src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/22312759/rickroll_4k.jpg">
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+    $('#myText').addClass('blinkT');
+    $('#myImage').addClass('blinkP');
+
+    function blink_text() {
+        $('.blinkT').fadeOut(500).fadeIn(500);
+    }
+
+    function blink_Photo() {
+        $('.blinkP').fadeOut(1000).fadeIn(1000);
+    }
+
+    setInterval(blink_text, 1000);
+    setInterval(blink_Photo, 2000);
+    });
+</script>
+
+</body>
+</html>
+
