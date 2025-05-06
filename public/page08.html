@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Сніпет: Розчинення слів</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    .word {
+    display: inline-block;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    }
+    .fade-out {
+    opacity: 0;
+    }
+    #text-container {
+    width: 60%;
+    margin: 100px auto;
+    font-size: 24px;
+    line-height: 1.6;
+    border: 2px dashed #333;
+    padding: 20px;
+    border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+
+<div id="text-container">
+Наведіть курсор на цей текст, і кожне слово почне зникати по черзі.
+</div>
+
+<script>
+$(document).ready(function() {
+const container = $('#text-container');
+const text = container.text();
+const words = text.split(' ');
+container.empty();
+
+words.forEach(word => {
+    const span = $('<span class="word"></span>').text(word + ' ');
+    container.append(span);
+});
+
+container.on('mouseenter', function() {
+    $('.word').each(function(index) {
+    const $this = $(this);
+    setTimeout(() => {
+        $this.addClass('fade-out');
+      }, index * 200); // затримка між словами
+    });
+});
+
+container.on('mouseleave', function() {
+    $('.word').removeClass('fade-out');
+});
+});
+</script>
+
+</body>
+</html>
